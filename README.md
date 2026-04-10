@@ -14,6 +14,11 @@ This project performs an in-depth Exploratory Data Analysis (EDA) on the IBM HR 
 2. **The Commute Factor:** Distance from home had the highest positive correlation with leaving.
 3. **Complexity:** No single factor perfectly predicts attrition, highlighting the need for multi-variable predictive modeling.
 
+## Business Recommendations
+- Increase compensation or benefits for younger employees
+- Provide relocation or remote work options to reduce commute burden
+- Focus retention strategies on high-risk employee segments
+
 ## Files
 * `ibm-hr-analytics-employee-attrition-dataset.ipynb`: The complete Python notebook containing all code and visualizations.
 * `WA_Fn-UseC_-HR-Employee-Attrition.csv`: The original dataset.
