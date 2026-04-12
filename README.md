@@ -22,3 +22,9 @@ This project performs an in-depth Exploratory Data Analysis (EDA) on the IBM HR 
 ## Files
 * `ibm-hr-analytics-employee-attrition-dataset.ipynb`: The complete Python notebook containing all code and visualizations.
 * `WA_Fn-UseC_-HR-Employee-Attrition.csv`: The original dataset.
+
+## 🔗 Project Link
+[View the full Kaggle Notebook](https://www.kaggle.com/code/premarp/ibm-hr-analytics-employee-attrition-dataset)
+
+---
+**Connect with me:** [LinkedIn](https://www.linkedin.com/in/prem-rawal/) | [GitHub](https://github.com/Premr24)
