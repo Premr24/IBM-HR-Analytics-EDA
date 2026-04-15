@@ -30,7 +30,7 @@ Our Random Forest model successfully identified the true drivers of attrition, o
 ## 🚀 How to Run the Project
 1. Clone this repository.
 2. Ensure you have the required libraries installed (`pip install pandas numpy matplotlib seaborn scikit-learn`).
-3. Run the `ibm-hr-analytics-employee-attrition-dataset.ipynb` Jupyter Notebook to view the full pipeline, from raw data to the final feature importance chart.
+3. Run the `ibm-hr-analytics-employee-attrition(Updated.ipynb` Jupyter Notebook to view the full pipeline, from raw data to the final feature importance chart.
 
 ## 🔗 Project Link
 [View the full Kaggle Notebook](https://www.kaggle.com/code/premarp/ibm-hr-analytics-employee-attrition-updated)
