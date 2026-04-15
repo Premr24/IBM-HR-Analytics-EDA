@@ -1,30 +1,39 @@
-# IBM HR Analytics: Employee Attrition EDA
+# 📊 IBM HR Analytics: Predicting Employee Attrition
 
-## Overview
-This project performs an in-depth Exploratory Data Analysis (EDA) on the IBM HR Analytics dataset to uncover the driving factors behind employee turnover. 
+## 🎯 Project Objective
+Employee turnover is a major cost for modern enterprises. The goal of this project is to analyze a comprehensive HR dataset, uncover the root causes of employee attrition, and build a predictive machine learning model to flag high-risk employees before they leave.
 
-## Technical Highlights
-* **Libraries Used:** Python, Pandas, Matplotlib, Seaborn
-* **Data Cleaning:** Removed zero-variance features to reduce noise.
-* **Analysis:** Utilized boxplots and correlation heatmaps to identify mathematical relationships between features like Income, Age, Commute Distance, and Attrition.
-* **Machine Learning Prep:** Applied One-Hot Encoding (`pd.get_dummies`) to transform all categorical text data into a fully numeric, machine-learning-ready pipeline.
+## 🧠 Strategic Approach: Domain-Driven Feature Engineering
+Rather than relying solely on raw demographic data, this project emphasizes **domain-specific feature engineering** to capture the compound, human reasons why employees quit. Key engineered features include:
+* **Flight Risk Index:** An interaction feature combining commute distance and job satisfaction to measure compound stress.
+* **Promotion Stagnation:** A ratio measuring the time since an employee's last promotion against their total tenure.
+* **Managerial Churn:** Calculating years spent under previous management to detect recent, disruptive leadership changes.
+* **Tenure Bands:** Grouping raw employment years into distinct career stages (e.g., Newcomer, Veteran).
 
-## Key Business Insights
-1. **Income & Age:** Turnover is heavily concentrated among younger, lower-paid employees.
-2. **The Commute Factor:** Distance from home had the highest positive correlation with leaving.
-3. **Complexity:** No single factor perfectly predicts attrition, highlighting the need for multi-variable predictive modeling.
+## 🛠️ Technical Stack
+* **Language:** Python
+* **Data Manipulation:** Pandas, NumPy
+* **Data Visualization:** Matplotlib, Seaborn
+* **Machine Learning:** Scikit-Learn (Random Forest Classifier)
+* **Techniques:** Exploratory Data Analysis (EDA), Data Cleaning, One-Hot Encoding, Feature Engineering, Model Evaluation (Recall, Feature Importance)
 
-## Business Recommendations
-- Increase compensation or benefits for younger employees
-- Provide relocation or remote work options to reduce commute burden
-- Focus retention strategies on high-risk employee segments
+## 📈 Key Insights & Business Recommendations
+Our Random Forest model successfully identified the true drivers of attrition, outperforming raw data baselines:
 
-## Files
-* `ibm-hr-analytics-employee-attrition-dataset.ipynb`: The complete Python notebook containing all code and visualizations.
-* `WA_Fn-UseC_-HR-Employee-Attrition.csv`: The original dataset.
+1. **Compound Stress is the #1 Trigger:** The engineered `Flight_Risk_Index` emerged as the most critical driver of attrition. 
+   * *Recommendation:* Implement targeted remote-work options for employees with long commutes to instantly reduce flight risk.
+2. **The Compensation Baseline:** `MonthlyIncome` remains a highly significant factor. 
+   * *Recommendation:* Proactively cross-reference salaries of high-performing employees flagged by the model against current market rates.
+3. **The Burnout Factor:** Employees assigned `OverTime` represent a massive risk category.
+   * *Recommendation:* Treat consistent departmental overtime as a signal to hire more headcount rather than a metric of high productivity.
+
+## 🚀 How to Run the Project
+1. Clone this repository.
+2. Ensure you have the required libraries installed (`pip install pandas numpy matplotlib seaborn scikit-learn`).
+3. Run the `ibm-hr-analytics-employee-attrition-dataset.ipynb` Jupyter Notebook to view the full pipeline, from raw data to the final feature importance chart.
 
 ## 🔗 Project Link
-[View the full Kaggle Notebook](https://www.kaggle.com/code/premarp/ibm-hr-analytics-employee-attrition-dataset)
+[View the full Kaggle Notebook](https://www.kaggle.com/code/premarp/ibm-hr-analytics-employee-attrition-updated)
 
 ---
 **Connect with me:** [LinkedIn](https://www.linkedin.com/in/prem-rawal/) | [GitHub](https://github.com/Premr24)
